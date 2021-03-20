@@ -1,0 +1,105 @@
+{
+  "id": "/subscriptions/352b97f8-30ed-4c63-ad72-58270b9f9bd8/resourceGroups/MyFirstResourceGroup/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-4ee6ee1f-8ae9",
+  "name": "Microsoft.Web-WebApp-Portal-4ee6ee1f-8ae9",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/352b97f8-30ed-4c63-ad72-58270b9f9bd8/resourcegroups/MyFirstResourceGroup/providers/Microsoft.Web/sites/BeccyThoughts",
+    "marketplaceItemId": "Microsoft.WebSite",
+    "provisioningHash": "customize-post-provisioning-steps-webapp-deployment"
+  },
+  "properties": {
+    "templateHash": "6994524413443138960",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "352b97f8-30ed-4c63-ad72-58270b9f9bd8"
+      },
+      "name": {
+        "type": "String",
+        "value": "BeccyThoughts"
+      },
+      "location": {
+        "type": "String",
+        "value": "UK South"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-MyFirstResourceGroup-8c8d"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "MyFirstResourceGroup"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "sku": {
+        "type": "String",
+        "value": "Free"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "F1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "linuxFxVersion": {
+        "type": "String",
+        "value": "NODE|12-lts"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2021-03-20T21:25:16.3008836Z",
+    "duration": "PT1.6456503S",
+    "correlationId": "906fdaf5-64f4-4e3b-812d-490538cfd0e6",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/352b97f8-30ed-4c63-ad72-58270b9f9bd8/resourceGroups/MyFirstResourceGroup/providers/Microsoft.Web/serverfarms/ASP-MyFirstResourceGroup-8c8d",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-MyFirstResourceGroup-8c8d"
+          }
+        ],
+        "id": "/subscriptions/352b97f8-30ed-4c63-ad72-58270b9f9bd8/resourceGroups/MyFirstResourceGroup/providers/Microsoft.Web/sites/BeccyThoughts",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "BeccyThoughts"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
